@@ -8,7 +8,7 @@
     "size": 32.5,
     "reviews": 12050000,
     "ratingAvg": 4.3,
-    "downloads": 5000000000,
+    "downloads": 50,
     "ratings": [
       { "name": "1 star", "count": 450000 },
       { "name": "2 star", "count": 300000 },
@@ -26,7 +26,7 @@
     "size": 28.9,
     "reviews": 8400000,
     "ratingAvg": 4.5,
-    "downloads": 1000000000,
+    "downloads": 100,
     "ratings": [
       { "name": "1 star", "count": 200000 },
       { "name": "2 star", "count": 150000 },
@@ -44,7 +44,7 @@
     "size": 25.4,
     "reviews": 4100000,
     "ratingAvg": 4.7,
-    "downloads": 300000000,
+    "downloads": 30,
     "ratings": [
       { "name": "1 star", "count": 40000 },
       { "name": "2 star", "count": 30000 },
@@ -62,7 +62,7 @@
     "size": 135.2,
     "reviews": 23000000,
     "ratingAvg": 4.1,
-    "downloads": 5000000000,
+    "downloads": 500,
     "ratings": [
       { "name": "1 star", "count": 900000 },
       { "name": "2 star", "count": 600000 },
@@ -80,7 +80,7 @@
     "size": 95.6,
     "reviews": 18000000,
     "ratingAvg": 4.5,
-    "downloads": 3000000000,
+    "downloads": 300,
     "ratings": [
       { "name": "1 star", "count": 700000 },
       { "name": "2 star", "count": 450000 },
@@ -98,7 +98,7 @@
     "size": 67.4,
     "reviews": 9200000,
     "ratingAvg": 4.0,
-    "downloads": 1000000000,
+    "downloads": 100,
     "ratings": [
       { "name": "1 star", "count": 500000 },
       { "name": "2 star", "count": 400000 },
@@ -116,7 +116,7 @@
     "size": 140.3,
     "reviews": 30000000,
     "ratingAvg": 4.6,
-    "downloads": 5000000000,
+    "downloads": 500,
     "ratings": [
       { "name": "1 star", "count": 800000 },
       { "name": "2 star", "count": 500000 },
@@ -134,7 +134,7 @@
     "size": 89.7,
     "reviews": 24000000,
     "ratingAvg": 4.4,
-    "downloads": 1000000000,
+    "downloads": 100,
     "ratings": [
       { "name": "1 star", "count": 600000 },
       { "name": "2 star", "count": 450000 },
@@ -152,7 +152,7 @@
     "size": 110.2,
     "reviews": 15000000,
     "ratingAvg": 4.3,
-    "downloads": 1000000000,
+    "downloads": 100,
     "ratings": [
       { "name": "1 star", "count": 400000 },
       { "name": "2 star", "count": 300000 },
@@ -170,7 +170,7 @@
     "size": 95.0,
     "reviews": 320000,
     "ratingAvg": 4.2,
-    "downloads": 20000000,
+    "downloads": 20,
     "ratings": [
       { "name": "1 star", "count": 10000 },
       { "name": "2 star", "count": 8000 },
@@ -188,7 +188,7 @@
     "size": 104.1,
     "reviews": 27000000,
     "ratingAvg": 4.5,
-    "downloads": 5000000000,
+    "downloads": 500,
     "ratings": [
       { "name": "1 star", "count": 500000 },
       { "name": "2 star", "count": 300000 },
@@ -206,7 +206,7 @@
     "size": 85.5,
     "reviews": 9300000,
     "ratingAvg": 4.2,
-    "downloads": 1000000000,
+    "downloads": 100,
     "ratings": [
       { "name": "1 star", "count": 300000 },
       { "name": "2 star", "count": 250000 },
@@ -224,7 +224,7 @@
     "size": 78.3,
     "reviews": 6500000,
     "ratingAvg": 4.4,
-    "downloads": 600000000,
+    "downloads": 60,
     "ratings": [
       { "name": "1 star", "count": 120000 },
       { "name": "2 star", "count": 100000 },
@@ -242,7 +242,7 @@
     "size": 62.9,
     "reviews": 5200000,
     "ratingAvg": 3.9,
-    "downloads": 500000000,
+    "downloads": 50,
     "ratings": [
       { "name": "1 star", "count": 300000 },
       { "name": "2 star", "count": 250000 },
@@ -260,7 +260,7 @@
     "size": 87.4,
     "reviews": 4800000,
     "ratingAvg": 4.1,
-    "downloads": 600000000,
+    "downloads": 60,
     "ratings": [
       { "name": "1 star", "count": 150000 },
       { "name": "2 star", "count": 120000 },
@@ -276,9 +276,9 @@
     "id": 16,
     "description": "TikTok is a destination for short-form mobile video. Whether you’re into comedy, dance, challenges, or just watching clips, its algorithm surfaces what you’ll love. You can create, edit, and upload your own videos too.",
     "size": 98.2,
-    "reviews": 22000000,
+    "reviews": 220,
     "ratingAvg": 4.5,
-    "downloads": 2000000000,
+    "downloads": 200,
     "ratings": [
       { "name": "1 star", "count": 600000 },
       { "name": "2 star", "count": 450000 },
@@ -296,7 +296,7 @@
     "size": 75.5,
     "reviews": 4300000,
     "ratingAvg": 4.3,
-    "downloads": 500000000,
+    "downloads": 500,
     "ratings": [
       { "name": "1 star", "count": 120000 },
       { "name": "2 star", "count": 100000 },
@@ -314,7 +314,7 @@
     "size": 102.8,
     "reviews": 11000000,
     "ratingAvg": 4.4,
-    "downloads": 1000000000,
+    "downloads": 100,
     "ratings": [
       { "name": "1 star", "count": 200000 },
       { "name": "2 star", "count": 150000 },
@@ -332,7 +332,7 @@
     "size": 85.0,
     "reviews": 5200000,
     "ratingAvg": 4.2,
-    "downloads": 400000000,
+    "downloads": 40,
     "ratings": [
       { "name": "1 star", "count": 100000 },
       { "name": "2 star", "count": 80000 },
@@ -350,7 +350,7 @@
     "size": 75.8,
     "reviews": 3000000,
     "ratingAvg": 4.1,
-    "downloads": 200000000,
+    "downloads": 20,
     "ratings": [
       { "name": "1 star", "count": 80000 },
       { "name": "2 star", "count": 60000 },
