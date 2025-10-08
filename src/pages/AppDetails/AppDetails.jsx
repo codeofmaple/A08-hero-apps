@@ -12,11 +12,24 @@ const AppDetails = () => {
     const getId = useParams()
     const { id } = getId;
 
-    const theIdsAppData = appsData?.find(app => app.id === Number(id));
-    if (!theIdsAppData) {
+    const appDetailsData = appsData?.find(app => app.id === Number(id));
+    if (!appDetailsData) {
         return <ErrorApp></ErrorApp>;
     }
-    const { image, title, companyName, description, downloads, ratingAvg, reviews, size } = theIdsAppData;
+    const { image, title, companyName, description, downloads, ratingAvg, reviews, size } = appDetailsData || {};
+
+    const handleInstall = () => {
+        const existingInstalledList = JSON.parse(localStorage.getItem('installedList'));
+        let updatedInstalledList = [];
+        if (existingInstalledList) {
+            const isDuplicate = existingInstalledList.some(p => p.id === appDetailsData.id)
+            if (isDuplicate) return alert("Already Installed!")
+            updatedInstalledList = [...existingInstalledList, appDetailsData]
+        } else {
+            updatedInstalledList.push(appDetailsData)
+        }
+        localStorage.setItem('installedList', JSON.stringify(updatedInstalledList))
+    }
 
     return (
         <div className='p-[4.16%]'>
@@ -45,14 +58,13 @@ const AppDetails = () => {
                             <h2 className='font-extrabold text-[2.5rem]'> {reviews}K</h2>
                         </div>
                     </div>
-                    <button className='mt-5'>
+                    <button onClick={handleInstall} className='mt-5'>
                         <a className="btn flex justify-center items-center bg-[#00d390] text-white px-10 py-5">
                             Install Now ({size}MB)
                         </a>
                     </button>
                 </div>
             </div>
-
             <hr className=' my-8 opacity-20' />
 
             <div>
@@ -60,7 +72,6 @@ const AppDetails = () => {
             </div>
 
             <hr className=' my-8 opacity-20' />
-
             <div className='space-y-4'>
                 <h5 className='font-semibold text-2xl'>Description</h5>
                 <p className=' details'>{description}</p>
