@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><a onClick={() => navigate("/")}>Home</a></li>
-        <li><a onClick={() => navigate("/all-apps")}>Apps</a></li>
+        <li><a onClick={() => navigate("/apps")}>Apps</a></li>
         <li><a>Installation</a></li>
     </>
     return (

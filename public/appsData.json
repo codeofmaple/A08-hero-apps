@@ -6,7 +6,7 @@
     "id": 1,
     "description": "WhatsApp is a messaging app available for Android and iPhone. You can use it to send and receive text, voice messages, make voice and video calls, and share images, documents, user locations, and other media. It uses your phone’s Internet connection to let you communicate with people in other countries without SMS or MMS fees.",
     "size": 32.5,
-    "reviews": 12050000,
+    "reviews": 1205,
     "ratingAvg": 4.3,
     "downloads": 50,
     "ratings": [
@@ -24,7 +24,7 @@
     "id": 2,
     "description": "Telegram is a messaging app with a focus on speed and security. It’s super fast, simple, and free. You can send messages, photos, videos, and files of any type. It also supports group chats, voice calls, and secret chats with end-to-end encryption.",
     "size": 28.9,
-    "reviews": 8400000,
+    "reviews": 8400,
     "ratingAvg": 4.5,
     "downloads": 100,
     "ratings": [
@@ -42,7 +42,7 @@
     "id": 3,
     "description": "Signal is a secure messaging app that uses end-to-end encryption by default. You can send messages, make voice and video calls, share media and files, and create groups. Signal also supports disappearing messages and has a strong focus on privacy.",
     "size": 25.4,
-    "reviews": 4100000,
+    "reviews": 4100,
     "ratingAvg": 4.7,
     "downloads": 30,
     "ratings": [
@@ -60,7 +60,7 @@
     "id": 4,
     "description": "Facebook helps you connect and share with the people in your life. You can post status updates, share photos and videos, follow others, join groups, events, and discover posts. It’s a full social network experience in your pocket.",
     "size": 135.2,
-    "reviews": 23000000,
+    "reviews": 23000,
     "ratingAvg": 4.1,
     "downloads": 500,
     "ratings": [
@@ -78,7 +78,7 @@
     "id": 5,
     "description": "Instagram is a place to express yourself through photos, videos, stories, and Reels. You can follow your friends, celebrities, brands, and explore content from around the world. It also supports messaging and sharing.",
     "size": 95.6,
-    "reviews": 18000000,
+    "reviews": 18000,
     "ratingAvg": 4.5,
     "downloads": 300,
     "ratings": [
@@ -96,7 +96,7 @@
     "id": 6,
     "description": "Snapchat is a camera app with chat, stories, and AR lenses. You can send photos and videos that disappear, follow friends’ stories, and discover content from publishers and creators. It also has map and AR features.",
     "size": 67.4,
-    "reviews": 9200000,
+    "reviews": 9200,
     "ratingAvg": 4.0,
     "downloads": 100,
     "ratings": [
@@ -114,7 +114,7 @@
     "id": 7,
     "description": "YouTube gives you access to a world of videos: music, gaming, tutorials, news, and more. You can watch, upload, like, share, and subscribe to channels. YouTube also supports live streaming and short-form videos (Shorts).",
     "size": 140.3,
-    "reviews": 30000000,
+    "reviews": 30000,
     "ratingAvg": 4.6,
     "downloads": 500,
     "ratings": [
@@ -132,7 +132,7 @@
     "id": 8,
     "description": "Spotify lets you listen to millions of songs, albums, and podcasts for free (with ads) or with a premium subscription. You can create playlists, discover new tracks, follow artists, and download music for offline listening.",
     "size": 89.7,
-    "reviews": 24000000,
+    "reviews": 24000,
     "ratingAvg": 4.4,
     "downloads": 100,
     "ratings": [
@@ -150,7 +150,7 @@
     "id": 9,
     "description": "Netflix is your one-stop streaming service for movies, TV shows, documentaries, and more. You can watch on multiple devices, download for offline viewing, create profiles, and get personalized recommendations.",
     "size": 110.2,
-    "reviews": 15000000,
+    "reviews": 15000,
     "ratingAvg": 4.3,
     "downloads": 100,
     "ratings": [
@@ -168,7 +168,7 @@
     "id": 10,
     "description": "Netflix Kids is a safer, child-friendly version of Netflix, offering age-appropriate shows, parental controls, and easy browsing for kids of all ages. Parents can manage profiles and control what content is shown.",
     "size": 95.0,
-    "reviews": 320000,
+    "reviews": 320,
     "ratingAvg": 4.2,
     "downloads": 20,
     "ratings": [
@@ -186,7 +186,7 @@
     "id": 11,
     "description": "Google Maps offers real-time GPS navigation, traffic, public transit, and place information. You can explore nearby businesses, see street view, plan routes for driving, walking, and biking, and even save offline maps.",
     "size": 104.1,
-    "reviews": 27000000,
+    "reviews": 27000,
     "ratingAvg": 4.5,
     "downloads": 500,
     "ratings": [
@@ -204,7 +204,7 @@
     "id": 12,
     "description": "Uber connects you with ride partners nearby for fast, reliable rides in minutes. You can also use it to order food (Uber Eats), schedule rides, and see fare estimates and driver ratings before you travel.",
     "size": 85.5,
-    "reviews": 9300000,
+    "reviews": 9300,
     "ratingAvg": 4.2,
     "downloads": 100,
     "ratings": [
@@ -222,7 +222,7 @@
     "id": 13,
     "description": "Airbnb helps you find and book unique homes, experiences, and places around the world. You can browse listings, message hosts, book stays, manage reservations, and discover local experiences.",
     "size": 78.3,
-    "reviews": 6500000,
+    "reviews": 6500,
     "ratingAvg": 4.4,
     "downloads": 60,
     "ratings": [
@@ -240,7 +240,7 @@
     "id": 14,
     "description": "Tinder is a dating and social networking app where you can swipe right to like and left to pass. You match with people who like you back. You can chat, share photos, and meet new people in your area or while traveling.",
     "size": 62.9,
-    "reviews": 5200000,
+    "reviews": 5200,
     "ratingAvg": 3.9,
     "downloads": 50,
     "ratings": [
@@ -258,7 +258,7 @@
     "id": 15,
     "description": "LinkedIn is the world’s largest professional network where you can connect with colleagues, search jobs, post content, and follow industry news. Grow your network and showcase your profile to recruiters.",
     "size": 87.4,
-    "reviews": 4800000,
+    "reviews": 4800,
     "ratingAvg": 4.1,
     "downloads": 60,
     "ratings": [
@@ -276,7 +276,7 @@
     "id": 16,
     "description": "TikTok is a destination for short-form mobile video. Whether you’re into comedy, dance, challenges, or just watching clips, its algorithm surfaces what you’ll love. You can create, edit, and upload your own videos too.",
     "size": 98.2,
-    "reviews": 220,
+    "reviews": 2200,
     "ratingAvg": 4.5,
     "downloads": 200,
     "ratings": [
@@ -294,7 +294,7 @@
     "id": 17,
     "description": "Pinterest helps you discover and save ideas like recipes, home decor, fashion, and more. Browse through pins, create boards, follow topics, and bookmark inspirations that matter to you.",
     "size": 75.5,
-    "reviews": 4300000,
+    "reviews": 4300,
     "ratingAvg": 4.3,
     "downloads": 500,
     "ratings": [
@@ -312,7 +312,7 @@
     "id": 18,
     "description": "Zoom is a video conferencing app for meetings, webinars, chat, and collaboration across devices. You can schedule, host, and join video and audio calls, share screens, and use breakout rooms and virtual backgrounds.",
     "size": 102.8,
-    "reviews": 11000000,
+    "reviews": 11000,
     "ratingAvg": 4.4,
     "downloads": 100,
     "ratings": [
@@ -330,7 +330,7 @@
     "id": 19,
     "description": "Slack is a collaboration hub that connects work with the people you work with through channels, direct messages, voice/video calls, file sharing, and integrations with many other productivity tools.",
     "size": 85.0,
-    "reviews": 5200000,
+    "reviews": 5200,
     "ratingAvg": 4.2,
     "downloads": 40,
     "ratings": [
@@ -348,7 +348,7 @@
     "id": 20,
     "description": "Evernote is a note-taking app that allows you to capture ideas, create to-do lists, clip articles from the web, organize your notes into notebooks, tag them, and sync across all your devices.",
     "size": 75.8,
-    "reviews": 3000000,
+    "reviews": 3000,
     "ratingAvg": 4.1,
     "downloads": 20,
     "ratings": [

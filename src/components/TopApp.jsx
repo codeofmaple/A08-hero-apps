@@ -22,7 +22,7 @@ const TopApp = () => {
 
                 {
                     appsData.slice(0, 8).map(app => (
-                        <div key={app.id} className='p-4 bg-white rounded-sm'>
+                        <div onClick={() => navigate(`/apps/${app.id}`)} key={app.id} className='p-4 bg-white rounded-sm'>
                             <img src={app.image} alt="app-img" className='rounded-lg w-full' />
                             <h6 className='text-xl font-medium my-4'>{app.title}</h6>
                             <div className='flex justify-between'>
@@ -43,7 +43,7 @@ const TopApp = () => {
 
             {/* btn show all apps*/}
             <div className='flex justify-center'>
-                <a onClick={() => navigate("/all-apps")} className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-5">Show All</a>
+                <a onClick={() => navigate("/apps")} className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-5">Show All</a>
             </div>
         </div>
     );

@@ -6,6 +6,7 @@ import Root from '../pages/Root/Root';
 import ErrorPages from '../pages/ErrorPage/ErrorPages';
 import Home from '../pages/Home/Home';
 import AllApps from '../pages/AllApps/AllApps';
+import AppDetails from '../pages/AppDetails/AppDetails';
 
 export const router = createBrowserRouter([
     {
@@ -19,8 +20,12 @@ export const router = createBrowserRouter([
                 Component: Home
             },
             {
-                path: "/all-apps",
+                path: "/apps",
                 Component: AllApps
+            },
+            {
+                path: "/apps/:id",
+                Component: AppDetails
             }
         ]
     },
