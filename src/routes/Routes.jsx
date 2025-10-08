@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Root from '../pages/Root/Root';
 import ErrorPages from '../pages/ErrorPage/ErrorPages';
 import Home from '../pages/Home/Home';
+import AllApps from '../pages/AllApps/AllApps';
 
 export const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
                 index: true,
                 path: "/",
                 Component: Home
+            },
+            {
+                path: "/all-apps",
+                Component: AllApps
             }
         ]
     },

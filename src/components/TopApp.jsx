@@ -3,12 +3,13 @@ import '../App.css';
 import downloadIcon from '../assets/icon-downloads.png'
 import ratingStarIcon from '../assets/icon-ratings.png'
 import useApps from '../hooks/useApps';
+import { useNavigate } from 'react-router';
 
 const TopApp = () => {
 
-    const gotenAppData = useApps()
-    const { appsData } = gotenAppData;
-    console.log(appsData)
+    const gottenAppData = useApps()
+    const { appsData } = gottenAppData;
+    const navigate = useNavigate();
 
     return (
         <div className='py-20 bg-[#62738210]'>
@@ -23,7 +24,7 @@ const TopApp = () => {
                     appsData.slice(0, 8).map(app => (
                         <div key={app.id} className='p-4 bg-white rounded-sm'>
                             <img src={app.image} alt="app-img" className='rounded-lg w-full' />
-                            <h6 className='text-xl font-medium my-4'>{app.companyName}</h6>
+                            <h6 className='text-xl font-medium my-4'>{app.title}</h6>
                             <div className='flex justify-between'>
                                 <div className='py-1.5 px-2.5 bg-[#f1f5e8] rounded-sm flex gap-2 items-center justify-center'>
                                     <img src={downloadIcon} alt="" className='size-4' />
@@ -42,7 +43,7 @@ const TopApp = () => {
 
             {/* btn show all apps*/}
             <div className='flex justify-center'>
-                <a className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-5">Show All</a>
+                <a onClick={() => navigate("/all-apps")} className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-5">Show All</a>
             </div>
         </div>
     );

@@ -1,10 +1,13 @@
 import React from 'react';
 import homeLogo from '../assets/logo.png'
+import { useNavigate } from 'react-router';
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
     const navLinks = <>
-        <li><a>Home</a></li>
-        <li><a>Apps</a></li>
+        <li><a onClick={() => navigate("/")}>Home</a></li>
+        <li><a onClick={() => navigate("/all-apps")}>Apps</a></li>
         <li><a>Installation</a></li>
     </>
     return (
@@ -21,8 +24,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                    <a href='/' className="font-bold flex items-center justify-center gap-1">
-                        <img className='size-7' src={homeLogo} alt="logo of hero app" />
+                    <a onClick={() => navigate("/")} className="font-bold cursor-pointer flex items-center justify-center gap-1 ">
+                        <img className='size-7 ' src={homeLogo} alt="logo of hero app" />
                         HERO.IO</a>
                 </div>
             </div>
@@ -32,7 +35,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Contribute</a>
+                <a className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-5">Contribute</a>
             </div>
         </div>
     );
