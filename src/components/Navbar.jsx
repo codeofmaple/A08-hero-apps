@@ -8,7 +8,7 @@ const Navbar = () => {
     const navLinks = <>
         <li><a onClick={() => navigate("/")}>Home</a></li>
         <li><a onClick={() => navigate("/apps")}>Apps</a></li>
-        <li><a>Installation</a></li>
+        <li><a onClick={() => navigate("/installed")}>Installation</a></li>
     </>
     return (
         <div className="navbar bg-base-100 shadow-md px-[4.16%] ">
@@ -35,7 +35,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-5">Contribute</a>
+
+                <a
+                    onClick={() => window.open('https://github.com/codeofmaple', '_blank')}
+
+                    className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-5">Contribute</a>
             </div>
         </div>
     );

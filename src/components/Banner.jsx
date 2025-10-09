@@ -10,8 +10,12 @@ const Banner = () => {
                 <h1 className='font-bold text-7xl'>We Build <br /> <span className='text-transparent bg-clip-text bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)]'>Productive</span> Apps</h1>
                 <p className='text-[#627382] mt-4 mb-8 text-xl'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 <div className='flex justify-center gap-4'>
-                    <button className='btn btn-ghost border border-solid border-[#d2d2d2] px-6 py-6 font-semibold text-xl'> <img src={playStoreImg} alt="play store img" />Google Play</button>
-                    <button className='btn btn-ghost border border-solid border-[#d2d2d2] px-6 py-6 font-semibold text-xl'><img src={appStoreImg} alt="app store img" />App Store</button>
+                    <button
+                        onClick={() => window.open('https://play.google.com/store', '_blank')}
+                        className='btn btn-ghost border border-solid border-[#d2d2d2] px-6 py-6 font-semibold text-xl'> <img src={playStoreImg} alt="play store img" />Google Play</button>
+                    <button
+                        onClick={() => window.open('https://www.apple.com/app-store/', '_blank')}
+                        className='btn btn-ghost border border-solid border-[#d2d2d2] px-6 py-6 font-semibold text-xl'><img src={appStoreImg} alt="app store img" />App Store</button>
                 </div>
                 <div className='flex justify-center pt-10'>
                     <img src={heroImg} alt="" />

@@ -9,21 +9,19 @@ const RatingsGraph = ({ appDetailsData }) => {
 
     return (
         <div className="w-full h-[300px] mt-5">
+            <h5 className="text-2xl font-semibold">Rating</h5>
             <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                     layout="vertical"
                     data={ratingsData}
-                    margin={{ top: 20, right: 30, left: 40, bottom: 5 }}
                 >
-                    <CartesianGrid strokeDasharray="3 3" />
                     <XAxis type="number" />
                     <YAxis type="category" dataKey="name" />
                     <Tooltip />
                     <Bar
                         dataKey="count"
                         fill="#f97316"
-                        barSize={25}
-                    // radius={[0, 8, 8, 0]}
+                        barSize={25}    
                     />
                 </BarChart>
             </ResponsiveContainer>
