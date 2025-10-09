@@ -49,7 +49,7 @@ const AppDetails = () => {
     }
 
     return (
-        <div className='p-[4.16%] bg-[#62738210]'>
+        <div className='p-[4.16%]'>
             <div className='flex md:flex-row flex-col gap-10'>
 
                 <img src={image} alt="" className='size-[21.875rem] self-center md:self-start' />
