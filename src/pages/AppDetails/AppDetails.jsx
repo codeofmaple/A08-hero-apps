@@ -7,21 +7,25 @@ import useApps from '../../hooks/useApps';
 import ErrorApp from '../ErrorPage/ErrorApp';
 import RatingsGraph from '../../components/RatingGraph';
 import { toast } from 'react-toastify';
+import Spinner from '../../components/Spinner/Spinner';
 
 const AppDetails = () => {
-    const gottenAppData = useApps()
-    const { appsData } = gottenAppData;
-    const getId = useParams()
-    const { id } = getId;
+    const { appsData, loading, error } = useApps();
+    const { id } = useParams();
+
     const appDetailsData = appsData?.find(app => app.id === Number(id));
     const [isInstalled, setIsInstalled] = useState(() => {
         const existingInstalledList = JSON.parse(localStorage.getItem('installedList')) || [];
         return existingInstalledList.some(p => p.id === Number(id));
     });
-    
+
+    if (loading) return <Spinner />;
+    if (error) return <ErrorApp />;
+
     if (!appDetailsData) {
         return <ErrorApp></ErrorApp>;
     }
+
     const { image, title, companyName, description, downloads, ratingAvg, reviews, size } = appDetailsData || {};
 
     const handleInstall = () => {

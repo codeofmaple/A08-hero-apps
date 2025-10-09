@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import downloadIcon from '../../assets/icon-downloads.png'
 import ratingStarIcon from '../../assets/icon-ratings.png'
 import { toast } from 'react-toastify';
+import useApps from '../../hooks/useApps';
+import Spinner from '../../components/Spinner/Spinner';
 
 const InstalledApps = () => {
     const [installedList, setInstalledList] = useState([]);
@@ -33,8 +35,14 @@ const InstalledApps = () => {
 
     }
 
+    const gottenAppData = useApps()
+    const { loading, error } = gottenAppData;
+
+    if (loading) return <Spinner />;
+    if (error) return <ErrorApp />;
+
     return (
-        <div className='bg-[#62738210] p-[4.16%]'>
+        <div className='p-[4.16%] '>
             <div className='text-center space-y-4 mb-10'>
                 <h2 className='font-bold text-5xl'>Our All Applications</h2>
                 <p className='details'>Explore All Apps on the Market developed by us. We code for Millions</p>

@@ -1,17 +1,28 @@
 import React from 'react';
 import homeLogo from '../assets/logo.png'
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
+import githubIcon from '../assets/github-Icon.png'
 
 const Navbar = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+    const currentPath = location.pathname;
+
+    const linkClass = (path) =>
+        `
+    transition-all duration-100
+   ${currentPath === path ? 'text-[#632ee3] border-b-3 border-solid border-purple-900 font-bold' : 'hover:text-[#632ee3]'}
+  `;
 
     const navLinks = <>
-        <li><a onClick={() => navigate("/")}>Home</a></li>
-        <li><a onClick={() => navigate("/apps")}>Apps</a></li>
-        <li><a onClick={() => navigate("/installed")}>Installation</a></li>
+        <li><a onClick={() => navigate("/")} className={linkClass("/")}>Home</a></li>
+        <li><a onClick={() => navigate("/apps")} className={linkClass("/apps")}>Apps</a></li>
+        <li><a onClick={() => navigate("/installed")} className={linkClass("/installed")}>Installation</a></li>
     </>
+
+
     return (
-        <div className="navbar bg-base-100 shadow-md px-[4.16%] ">
+        <div className="navbar bg-base-100  px-[4.16%] ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +41,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 font-medium">
                     {navLinks}
                 </ul>
             </div>
@@ -39,7 +50,7 @@ const Navbar = () => {
                 <a
                     onClick={() => window.open('https://github.com/codeofmaple', '_blank')}
 
-                    className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-5">Contribute</a>
+                    className="btn flex justify-center items-center bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white"> <img src={githubIcon} alt="" />Contribute</a>
             </div>
         </div>
     );

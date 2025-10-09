@@ -1,22 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import downloadIcon from '../../assets/icon-downloads.png'
 import ratingStarIcon from '../../assets/icon-ratings.png'
 import useApps from '../../hooks/useApps';
 import AppNotFound from '../NotFound/AppNotFound';
 import { useNavigate } from 'react-router';
+import Spinner from '../../components/Spinner/Spinner';
 
 const AllApps = () => {
     const navigate = useNavigate()
     const gottenAppData = useApps()
-    const { appsData } = gottenAppData;
+    const { appsData, loading, error } = gottenAppData;
 
     const [search, setSearch] = useState('');
     const term = search.toLowerCase().trim();
-    const searchedApps = term ? appsData.filter(apps => apps.title.toLowerCase().includes(term)) : appsData;
+
+    const [searchedApps, setSearchedApps] = useState(appsData);
+    const [searching, setSearching] = useState(false);
+
+    useEffect(() => {
+        if (!appsData) return;
+        setSearching(true);
+        const timer = setTimeout(() => {
+            const filtered = term
+                ? appsData.filter(app => app.title.toLowerCase().includes(term))
+                : appsData;
+            setSearchedApps(filtered);
+            setSearching(false);
+        }, 300);
+
+        return () => clearTimeout(timer);
+    }, [search, appsData, term]);
+
+    if (loading) return <Spinner />;
+    if (error) return <ErrorApp />;
 
     return (
         <div>
-            <div className='py-20 bg-[#62738210]'>
+            <div className='py-20'>
                 <div className='text-center space-y-4 mb-10'>
                     <h2 className='font-bold text-5xl'>Our All Applications</h2>
                     <p className='details'>Explore All Apps on the Market developed by us. We code for Millions</p>
@@ -47,10 +67,12 @@ const AllApps = () => {
                 </div>
                 {/* top app cards */}
                 <div className='mx-[4.16%] grid grid-cols-4 gap-4 pb-10'>
-
                     {
-                        searchedApps.length > 0 ? (
-
+                        searching ? (
+                            <div className='col-span-4 flex justify-center'>
+                                <Spinner />
+                            </div>
+                        ) : searchedApps.length > 0 ? (
                             searchedApps.map(app => (
                                 <div onClick={() => navigate(`/apps/${app.id}`)} key={app.id} className='p-4 bg-white rounded-sm'>
                                     <img src={app.image} alt="app-img" className='rounded-lg w-full' />
@@ -68,8 +90,8 @@ const AllApps = () => {
                                 </div>
                             ))
                         ) : (
-                            <div className=' col-span-4'>
-                                <AppNotFound></AppNotFound>
+                            <div className='col-span-4'>
+                                <AppNotFound />
                             </div>
                         )
                     }

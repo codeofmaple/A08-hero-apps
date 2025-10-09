@@ -9,11 +9,11 @@ import AllApps from '../pages/AllApps/AllApps';
 import AppDetails from '../pages/AppDetails/AppDetails';
 import InstalledApps from '../pages/InstalledApps/InstalledApps';
 
+
 export const router = createBrowserRouter([
     {
         path: "/",
         Component: Root,
-        errorElement: <ErrorPages></ErrorPages>,
         children: [
             {
                 index: true,
@@ -31,6 +31,10 @@ export const router = createBrowserRouter([
             {
                 path: "/installed",
                 Component: InstalledApps
+            },
+            {
+                path: "*",
+                element: <ErrorPages />
             }
         ]
     },

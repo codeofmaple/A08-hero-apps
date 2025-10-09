@@ -14,7 +14,7 @@ const ErrorApp = () => {
 
                 {/* <a onClick={() => navigate("/all-apps")} className="btn bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-3.5">Go Back!</a> */}
                 <button
-                    onClick={() => navigate("/all-apps")}
+                    onClick={() => navigate("/apps")}
                     className="btn bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white px-10 py-3.5"
                 >
                     Go Back!
