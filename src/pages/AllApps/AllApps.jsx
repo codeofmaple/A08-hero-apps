@@ -36,7 +36,7 @@ const AllApps = () => {
 
     return (
         <div>
-            <div className='lg:py-20 pt-10'>
+            <div className='lg:py-20 pt-10 '>
                 <div className='text-center space-y-4 mb-10'>
                     <h2 className='font-bold text-5xl'>Our All Applications</h2>
                     <p className='details md:px-0 px-[2%]'>Explore All Apps on the Market developed by us. We code for Millions</p>

@@ -3,8 +3,8 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-gray-300 py-10 px-6 mt-10">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
+        <footer className="bg-black text-gray-300 py-10  mt-10">
+            <div className="w-11/12 mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
                 <div>
                     <h2 className="text-2xl font-bold text-white mb-2">Hero.IO</h2>
                     <p className="text-sm leading-relaxed">
@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-500">
+            <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-500 w-11/12 mx-auto">
                 © {new Date().getFullYear()} Hero.IO — All rights reserved.
             </div>
         </footer>
