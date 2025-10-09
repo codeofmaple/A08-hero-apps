@@ -1,16 +1,33 @@
-# React + Vite
+# **Hero.IO – Explore, Install & Manage Your Favorite Apps**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive, single-page React application that showcases a curated catalog of mobile apps.  
+Browse, search, install, and manage your favorite apps in one beautiful place.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Description**
+Hero.IO is a modern web application that allows users to explore, search, and install apps seamlessly.  
+It features a responsive interface, real-time search, and detailed app insights with interactive charts.  
+Users can install and manage their favorite apps locally with persistent data storage.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## **Features**
+- **Home Page:** Showcases top apps, banner, and quick navigation to explore all apps.  
+- **All Apps Page:** Displays all available apps with live search, filters, and sorting by downloads.  
+- **App Details Page:** Detailed information, ratings chart (Recharts), and install functionality with toast feedback.  
+- **My Installation Page:** Lists installed apps, supports uninstalling, and syncs with localStorage.  
+- **Error Page:** Custom 404/error page with navigation options.  
+- **Loading Animation:** Smooth user experience during navigation and search.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **Technologies Used**
+- **React.js** – Component-based frontend framework  
+- **React Router DOM** – For seamless page navigation  
+- **Tailwind CSS** – For responsive and modern styling  
+- **Recharts** – For visualizing app reviews  
+- **React Toastify** – For toast notifications  
+- **LocalStorage API** – For managing installed apps locally  
+
+
