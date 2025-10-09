@@ -5,6 +5,7 @@ import ratingsIcon from '../../assets/icon-ratings.png'
 import reviewIcon from '../../assets/icon-review.png'
 import useApps from '../../hooks/useApps';
 import ErrorApp from '../ErrorPage/ErrorApp';
+import RatingsGraph from '../../components/RatingGraph';
 
 const AppDetails = () => {
     const gottenAppData = useApps()
@@ -69,6 +70,8 @@ const AppDetails = () => {
 
             <div>
                 {/* graph chart here */}
+                <RatingsGraph appDetailsData={appDetailsData} />
+
             </div>
 
             <hr className=' my-8 opacity-20' />
