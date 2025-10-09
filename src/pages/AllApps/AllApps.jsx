@@ -74,7 +74,12 @@ const AllApps = () => {
                             </div>
                         ) : searchedApps.length > 0 ? (
                             searchedApps.map(app => (
-                                <div onClick={() => navigate(`/apps/${app.id}`)} key={app.id} className='p-4 bg-white rounded-sm'>
+                                <div onClick={() => navigate(`/apps/${app.id}`)} key={app.id}
+                                    className='p-4 bg-white rounded-sm 
+                   hover:shadow-lg hover:scale-105 
+                   transition-transform duration-300 cursor-pointer'
+
+                                >
                                     <img src={app.image} alt="app-img" className='rounded-lg w-full' />
                                     <h6 className='text-xl font-medium my-4'>{app.title}</h6>
                                     <div className='flex justify-between'>
