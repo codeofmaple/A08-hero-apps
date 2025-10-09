@@ -7,7 +7,7 @@ const ErrorPages = () => {
     const navigate = useNavigate();
 
     return (
-        <div className='p-20 bg-[#62738210]'>
+        <div className='p-20'>
             <div className='flex flex-col items-center justify-center'>
                 <img src={errorImg} className='my-14'/>
                 <h1 className='text-5xl font-semibold'>Oops, page not found!</h1>
