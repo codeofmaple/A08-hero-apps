@@ -68,12 +68,12 @@ const InstalledApps = () => {
             <div className='flex flex-col gap-4'>
                 {/* each cards */}
                 {sortedApps.map(app => (
-                    <div key={app.id} className='flex justify-between p-4 bg-white rounded-sm items-center'>
-                        <div className='flex gap-4 '>
-                            <img src={app.image} alt="" className='size-20 rounded-lg' />
+                    <div key={app.id} className='flex md:flex-row flex-col justify-between p-4 bg-white rounded-sm items-center'>
+                        <div className='flex md:flex-row flex-col gap-4 '>
+                            <img src={app.image} alt="" className='size-20 rounded-lg md:self-auto self-center' />
                             <div>
-                                <h6> {app.title}</h6>
-                                <div className='flex gap-4 items-center mt-4'>
+                                <h6 className='flex md:justify-normal justify-center'> {app.title}</h6>
+                                <div className='flex  gap-4 md:items-center mt-4'>
                                     <div className='flex items-center gap-1'>
                                         <img src={downloadIcon} alt="" className='size-4' />
                                         <p>{app.downloads}M</p>
@@ -86,7 +86,7 @@ const InstalledApps = () => {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={() => handleUninstall(app.id, app.title)}>
+                        <button className='md:w-fit w-full md:mt-0 mt-4' onClick={() => handleUninstall(app.id, app.title)}>
                             <a className="btn flex justify-center items-center bg-[#00d390] text-white">
                                 Uninstall
                             </a>

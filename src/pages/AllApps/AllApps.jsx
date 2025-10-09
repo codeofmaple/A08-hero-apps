@@ -36,16 +36,16 @@ const AllApps = () => {
 
     return (
         <div>
-            <div className='py-20'>
+            <div className='lg:py-20 pt-10'>
                 <div className='text-center space-y-4 mb-10'>
                     <h2 className='font-bold text-5xl'>Our All Applications</h2>
-                    <p className='details'>Explore All Apps on the Market developed by us. We code for Millions</p>
+                    <p className='details md:px-0 px-[2%]'>Explore All Apps on the Market developed by us. We code for Millions</p>
                 </div>
                 {/* search btn */}
-                <div className='flex justify-between mx-[4.16%] mb-4'>
+                <div className='flex md:flex-row flex-col md:gap-0 gap-4 justify-between mx-[4.16%] mb-4'>
                     <h4 className='font-semibold text-2xl '>({searchedApps.length}) Apps Found</h4>
                     <div className=''>
-                        <label className="input bg-transparent w-[25rem]">
+                        <label className="input bg-transparent w-full md:w-[25rem]">
                             <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <g
                                     strokeLinejoin="round"
@@ -66,7 +66,7 @@ const AllApps = () => {
                     </div>
                 </div>
                 {/* top app cards */}
-                <div className='mx-[4.16%] grid grid-cols-4 gap-4 pb-10'>
+                <div className='mx-[4.16%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-10'>
                     {
                         searching ? (
                             <div className='col-span-4 flex justify-center'>

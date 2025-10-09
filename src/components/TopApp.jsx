@@ -12,13 +12,13 @@ const TopApp = () => {
     const navigate = useNavigate();
 
     return (
-        <div className='py-20 bg-[#62738210]'>
+        <div className='py-20'>
             <div className='text-center space-y-4 mb-10'>
                 <h2 className='font-bold text-5xl'>Trending Apps</h2>
                 <p className='details'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             {/* top app cards */}
-            <div className='mx-[4.16%] grid grid-cols-4 gap-4 pb-10'>
+            <div className='mx-[4.16%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-10'>
 
                 {
                     appsData.slice(0, 8).map(app => (
