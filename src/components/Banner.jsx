@@ -22,7 +22,7 @@ const Banner = () => {
                 </div>
                 <div className='bg-[linear-gradient(125.07deg,#632ee3,#9f62f2_100%)] py-10 md:py-20 text-white'>
                     <h2 className='pb-10 font-bold text-5xl md:px-0 px-[1%]'>Trusted by Millions, Built for You</h2>
-                    <div className='flex justify-center md:flex-row flex-col gap-6'>
+                    <div className='flex justify-center lg:flex-row flex-col lg:gap-6 gap-10'>
                         <div className='text-center px-[4.375rem]'>
                             <p className=' opacity-80'>Total Downloads</p>
                             <h1 className='text-6xl font-extrabold py-4 '>29.6M</h1>
