@@ -109,7 +109,7 @@ Works perfectly on: - Desktop
 ## 🛠️ **Technologies Used**
 
 -   **React.js**
--   **React Router DOM**
+-   **React Router**
 -   **Tailwind CSS**
 -   **Recharts**
 -   **React Toastify**
@@ -124,7 +124,7 @@ Works perfectly on: - Desktop
   -------------------- ------------------------
   `react`              Core UI library
   `react-dom`          DOM renderer
-  `react-router-dom`   Routing and navigation
+  `react-router`       Routing and navigation
   `recharts`           Interactive charts
   `react-toastify`     Toast alerts
   `tailwindcss`        Styling
