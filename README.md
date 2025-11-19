@@ -1,11 +1,11 @@
 # **Hero.IO -- Explore, Install & Manage Your Favorite Apps**
 
 A fully responsive and interactive React-based App Store--style web
-application.\
+application.
 Browse, search, install, sort, and manage apps --- all inside a
 beautiful single-page experience.
 
-🔗 **Live Demo:** https://heroapps.pages.dev/\
+🔗 **Live Demo:** https://heroapps.pages.dev/
 📦 **Repository:** https://github.com/codeofmaple/A08-hero-apps
 
 ------------------------------------------------------------------------
@@ -34,86 +34,86 @@ deployment reloads.
 
 ### **🏠 Home Page**
 
--   Banner with heading, text, and **App Store / Play Store** buttons\
--   3 States (statistics) section\
--   Top Apps section (8 apps in 4-column layout)\
--   Each card shows: image, title, downloads, rating\
--   Clicking opens the **App Details** page\
+-   Banner with heading, text, and **App Store / Play Store** buttons
+-   3 States (statistics) section
+-   Top Apps section (8 apps in 4-column layout)
+-   Each card shows: image, title, downloads, rating
+-   Clicking opens the **App Details** page
 -   Includes **Show All** button
 
 ------------------------------------------------------------------------
 
 ### **📱 All Apps Page**
 
--   Title + subtitle (Figma styled)\
--   Shows total app count + search bar\
--   **Live Search** (case-insensitive)\
--   "No App Found" UI when no match\
--   App cards display full info\
+-   Title + subtitle (Figma styled)
+-   Shows total app count + search bar
+-   **Live Search** (case-insensitive)
+-   "No App Found" UI when no match
+-   App cards display full info
 -   Clicking a card → App Details
 
 ------------------------------------------------------------------------
 
 ### **📊 App Details Page**
 
--   Large app image\
--   Title, rating, reviews, downloads\
+-   Large app image
+-   Title, rating, reviews, downloads
 -   **Install button**:
     -   Changes to **Installed**
-    -   Becomes disabled\
-    -   Shows **success toast**\
--   **Recharts-based Review Chart**\
+    -   Becomes disabled
+    -   Shows **success toast**
+-   **Recharts-based Review Chart**
 -   Full description section
 
 ------------------------------------------------------------------------
 
 ### **📂 My Installation Page**
 
--   Shows all installed apps from LocalStorage\
+-   Shows all installed apps from LocalStorage
 -   **Uninstall button** removes from:
-    -   UI\
-    -   LocalStorage\
--   Toast message on uninstall\
+    -   UI
+    -   LocalStorage
+-   Toast message on uninstall
 -   Sorting dropdown:
-    -   High → Low downloads\
+    -   High → Low downloads
     -   Low → High downloads
 
 ------------------------------------------------------------------------
 
 ### **⚠️ Error & Loading**
 
--   Custom 404/Error Page\
--   Relevant "Not Found" messages\
+-   Custom 404/Error Page
+-   Relevant "Not Found" messages
 -   Loading animation during:
-    -   Navigation\
+    -   Navigation
     -   Search
 
 ------------------------------------------------------------------------
 
 ### **💾 LocalStorage Integration**
 
--   Saves installed apps persistently\
--   Prevents duplicate installation\
+-   Saves installed apps persistently
+-   Prevents duplicate installation
 -   Syncs My Installation dynamically
 
 ------------------------------------------------------------------------
 
 ### **📱 Responsive Design**
 
-Works perfectly on: - Desktop\
-- Tablet\
+Works perfectly on: - Desktop
+- Tablet
 - Mobile
 
 ------------------------------------------------------------------------
 
 ## 🛠️ **Technologies Used**
 
--   **React.js**\
--   **React Router DOM**\
--   **Tailwind CSS**\
--   **Recharts**\
--   **React Toastify**\
--   **JavaScript (ES6+)**\
+-   **React.js**
+-   **React Router DOM**
+-   **Tailwind CSS**
+-   **Recharts**
+-   **React Toastify**
+-   **JavaScript (ES6+)**
 -   **LocalStorage API**
 
 ------------------------------------------------------------------------
@@ -186,9 +186,9 @@ App runs at:
 
 ## 🌐 **Deployment Notes**
 
-To avoid 404 errors on refresh: - Enable **SPA fallback to index.html**\
-- Works on: - Cloudflare Pages\
-- Netlify\
+To avoid 404 errors on refresh: - Enable **SPA fallback to index.html**
+- Works on: - Cloudflare Pages
+- Netlify
 - Vercel
 
 This ensures smooth routing after deployment.
@@ -197,7 +197,7 @@ This ensures smooth routing after deployment.
 
 ## 👨‍💻 **Contribution**
 
-A **Contribution** button in the header links to your GitHub profile.\
+A **Contribution** button in the header links to your GitHub profile.
 Feel free to improve, report bugs, or extend features.
 
 ------------------------------------------------------------------------
